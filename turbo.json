@@ -44,11 +44,11 @@
         "db:up": { "cache": false },
         "db:drop": { "cache": false },
         "db:migrate": {
-            "dependsOn": ["@acme/utils#build", "@acme/database#build"],
+            "dependsOn": ["@repo/utils#build", "@repo/database#build"],
             "cache": false
         },
         "db:seed": {
-            "dependsOn": ["@acme/utils#build", "@acme/database#build"],
+            "dependsOn": ["@repo/utils#build", "@repo/database#build"],
             "cache": false
         }
     }

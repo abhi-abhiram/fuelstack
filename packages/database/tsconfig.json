@@ -1,6 +1,6 @@
 {
     "$schema": "https://json.schemastore.org/tsconfig",
-    "extends": "@acme/tsconfig/base.json",
+    "extends": "@repo/typescript-config/base.json",
     "compilerOptions": {
         "allowSyntheticDefaultImports": true,
         "lib": ["ES2022"],
@@ -9,12 +9,12 @@
         "rootDir": "./src",
         "sourceMap": true,
         // Drizzle doesn't support es5 yet
-        "target": "ES6"
+        "target": "ES2022"
     },
     "ts-node": {
         "swc": false,
         "compilerOptions": {
-            "module": "CommonJS"
+            "module": "NodeNext"
         }
     },
     "include": ["src"],

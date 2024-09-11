@@ -1,4 +1,4 @@
-import { migrateDatabase } from '@acme/database'
+import { migrateDatabase } from '@repo/database'
 
 import { env } from '../env'
 

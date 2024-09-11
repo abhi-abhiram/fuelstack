@@ -1,5 +1,5 @@
 import { FastifyInstance, FastifyReply, FastifyRequest } from 'fastify'
-import { type User, userTable } from '@acme/database'
+import { type User, userTable } from '@repo/database'
 
 export default async function (fastify: FastifyInstance) {
   fastify.get('/', {}, async function (_request: FastifyRequest, reply: FastifyReply) {

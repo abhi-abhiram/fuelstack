@@ -1,5 +1,5 @@
 {
-    "name": "@acme/utils",
+    "name": "@repo/utils",
     "version": "0.0.0",
     "private": true,
     "main": "./dist/index.js",
@@ -22,9 +22,8 @@
         "typeid-js": "^0.3.0"
     },
     "devDependencies": {
-        "@acme/eslint-config": "workspace:*",
-        "@acme/jest-presets": "workspace:*",
-        "@acme/tsconfig": "workspace:*",
+        "@repo/eslint-config": "workspace:*",
+        "@repo/typescript-config": "workspace:*",
         "@types/jest": "^29.5.3",
         "@types/node": "^20.4.10",
         "eslint": "^8.47.0",
@@ -32,6 +31,6 @@
         "typescript": "5.1.6"
     },
     "jest": {
-        "preset": "@acme/jest-presets/node"
+        "preset": "@repo/jest-presets/node"
     }
 }

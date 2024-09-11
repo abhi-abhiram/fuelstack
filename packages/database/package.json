@@ -1,5 +1,5 @@
 {
-    "name": "@acme/database",
+    "name": "@repo/database",
     "version": "0.0.0",
     "private": true,
     "main": "./dist/index.js",
@@ -22,7 +22,7 @@
         "lint": "eslint \"**/*.{ts,tsx}\""
     },
     "dependencies": {
-        "@acme/utils": "workspace:*",
+        "@repo/utils": "workspace:*",
         "@neondatabase/serverless": "^0.5.7",
         "dotenv": "^16.3.1",
         "drizzle-orm": "^0.28.2",
@@ -32,8 +32,8 @@
         "zod": "^3.21.4"
     },
     "devDependencies": {
-        "@acme/eslint-config": "workspace:*",
-        "@acme/tsconfig": "workspace:*",
+        "@repo/eslint-config": "workspace:*",
+        "@repo/typescript-config": "workspace:*",
         "@types/node": "^20.4.10",
         "drizzle-kit": "^0.19.12",
         "eslint": "^8.47.0",

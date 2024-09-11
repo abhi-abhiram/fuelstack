@@ -1,6 +1,6 @@
 {
     "$schema": "https://json.schemastore.org/tsconfig",
-    "extends": "@acme/tsconfig/base.json",
+    "extends": "@repo/typescript-config/base.json",
     "compilerOptions": {
         "baseUrl": ".",
         "outDir": "dist",
@@ -8,12 +8,12 @@
         "allowSyntheticDefaultImports": true,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
-        "lib": ["es2022"],
-        "module": "es2022",
+        "lib": ["ES2022"],
+        "module": "NodeNext",
         "removeComments": true,
         "resolveJsonModule": true,
         "sourceMap": true,
-        "target": "es2022",
+        "target": "ES2022",
         "types": ["jest", "node"],
         "paths": {
             "@/*": ["./src/*"]

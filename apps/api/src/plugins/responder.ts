@@ -1,5 +1,5 @@
 import fp from 'fastify-plugin'
-import { jsonResponse } from '@acme/utils'
+import { jsonResponse } from '@repo/utils'
 
 export default fp(async (fastify) => {
   fastify.decorate<typeof jsonResponse>('jsonResponse', jsonResponse)

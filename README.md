@@ -54,10 +54,10 @@ pnpm dlx create-turbo@latest -e https://github.com/riipandi/fuelstack
 
 ### Changing The Organization Scope
 
-The organization scope for this starter is `@acme`. To change this, you'll need to do the following:
+The organization scope for this starter is `@repo`. To change this, you'll need to do the following:
 
-- Rename folders in `packages/*` to replace `acme` with your desired scope.
-- Search and replace `acme` string with your desired scope.
+- Rename folders in `packages/*` to replace `repo` with your desired scope.
+- Search and replace `repo` string with your desired scope.
 
 ### Generate Secret Key
 
@@ -134,8 +134,8 @@ pnpm cleanup      # Clean up all node_modules and dist folders
 
 ```sh
 docker build -f apps/website/Dockerfile . --no-cache \
-  -t acme-website:$(npm pkg get version | tr -d "\042") \
-  -t acme-website:latest
+  -t repo-website:$(npm pkg get version | tr -d "\042") \
+  -t repo-website:latest
 ```
 
 If you want to use Turbo caching:
@@ -144,15 +144,15 @@ If you want to use Turbo caching:
 docker build -f apps/website/Dockerfile . --no-cache \
   --build-arg TURBO_TEAM="your_team_name" \
   --build-arg TURBO_TOKEN="your_token" \
-  -t acme-website:$(npm pkg get version | tr -d "\042") \
-  -t acme-website:latest
+  -t repo-website:$(npm pkg get version | tr -d "\042") \
+  -t repo-website:latest
 ```
 
 ### Run Docker image
 
 ```sh
-docker run --rm -it --name acme-website -p 3000:3000 \
-  --env-file .env.docker acme-website:latest
+docker run --rm -it --name repo-website -p 3000:3000 \
+  --env-file .env.docker repo-website:latest
 ```
 
 For more detailed explanation, check out [Deploying with Docker](https://turbo.build/repo/docs/handbook/deploying-with-docker) documentation.

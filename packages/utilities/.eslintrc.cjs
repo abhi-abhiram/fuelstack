@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['@acme/eslint-config/nodelib'],
+  extends: ['@repo/eslint-config/nodelib'],
 }
