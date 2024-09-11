@@ -1,5 +1,5 @@
 import fp from 'fastify-plugin'
-import { db, dbClientType } from '@repo/'
+import { db, dbClientType } from '@repo/shared'
 
 export interface DrizzlePluginOptions {
   // Specify Support plugin options here

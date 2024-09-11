@@ -1,20 +1,22 @@
-import { join } from 'node:path'
+import * as path from 'node:path';
 
-import Fastify, { FastifyInstance } from 'fastify'
-import AutoLoad, { AutoloadPluginOptions } from '@fastify/autoload'
-import fastifyRequestLogger from '@mgcrea/fastify-request-logger'
+import Fastify, { type FastifyInstance, } from 'fastify';
+import AutoLoad, { AutoloadPluginOptions } from '@fastify/autoload';
 
-import { env } from './env'
+import { env } from './env';
 
-// Place your custom options for app below here.
+
+
+
 export type AppOptions = {
-  autoMigrate?: boolean
-} & Partial<AutoloadPluginOptions>
+  // Place your custom options for app below here.
+} & Partial<AutoloadPluginOptions>;
+
 
 // Pass --options via CLI arguments in command to enable these options.
-const _options: AppOptions = {
-  autoMigrate: false,
+const options: AppOptions = {
 }
+
 
 const server: FastifyInstance = Fastify({
   logger: {
@@ -27,19 +29,19 @@ const server: FastifyInstance = Fastify({
       },
     },
   },
-})
+});
+
 
 // Register fastify plugins
-server.register(fastifyRequestLogger)
-
 server.register(AutoLoad, {
-  dir: join(__dirname, 'plugins'),
+  dir: path.join(__dirname, 'plugins'),
 })
 
 server.register(AutoLoad, {
-  dir: join(__dirname, 'routes'),
+  dir: path.join(__dirname, 'routes'),
   dirNameRoutePrefix: true, // lack of prefix will mean no prefix, instead of directory name
 })
+
 
 export const start = async () => {
   try {

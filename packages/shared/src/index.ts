@@ -2,6 +2,10 @@
 export * from './client'
 export * from './migrator'
 
+
+// contracts
+export * from './contracts'
+
 // Database schemas
 export * from './schema/user'
 

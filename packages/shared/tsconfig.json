@@ -6,7 +6,6 @@
         "lib": ["ES2022"],
         "module": "NodeNext",
         "outDir": "./dist",
-        "rootDir": "./src",
         "sourceMap": true,
         // Drizzle doesn't support es5 yet
         "target": "ES2022"
@@ -17,6 +16,6 @@
             "module": "CommonJS"
         }
     },
-    "include": ["src"],
+    "include": ["src", "drizzle.config.ts"],
     "exclude": ["node_modules"]
 }

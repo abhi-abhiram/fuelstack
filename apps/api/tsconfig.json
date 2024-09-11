@@ -1,6 +1,6 @@
 {
     "$schema": "https://json.schemastore.org/tsconfig",
-    "extends": "@repo/typescript-config/base.json",
+    "display": "Default",
     "compilerOptions": {
         "baseUrl": ".",
         "outDir": "dist",
@@ -17,7 +17,16 @@
         "types": ["jest", "node"],
         "paths": {
             "@/*": ["./src/*"]
-        }
+        },
+        "declaration": true,
+        "declarationMap": true,
+        "esModuleInterop": true,
+        "incremental": false,
+        "isolatedModules": true,
+        "moduleDetection": "force",
+        "noUncheckedIndexedAccess": true,
+        "skipLibCheck": true,
+        "strict": true
     },
     "ts-node": {
         "compilerOptions": {
