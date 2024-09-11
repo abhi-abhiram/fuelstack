@@ -4,7 +4,7 @@
     "compilerOptions": {
         "allowSyntheticDefaultImports": true,
         "lib": ["ES2022"],
-        "module": "CommonJS",
+        "module": "NodeNext",
         "outDir": "./dist",
         "rootDir": "./src",
         "sourceMap": true,
@@ -14,7 +14,7 @@
     "ts-node": {
         "swc": false,
         "compilerOptions": {
-            "module": "NodeNext"
+            "module": "CommonJS"
         }
     },
     "include": ["src"],

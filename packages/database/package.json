@@ -22,8 +22,8 @@
         "lint": "eslint \"**/*.{ts,tsx}\""
     },
     "dependencies": {
-        "@repo/utils": "workspace:*",
         "@neondatabase/serverless": "^0.5.7",
+        "@repo/utils": "workspace:*",
         "dotenv": "^16.3.1",
         "drizzle-orm": "^0.28.2",
         "drizzle-zod": "^0.5.0",
@@ -34,11 +34,11 @@
     "devDependencies": {
         "@repo/eslint-config": "workspace:*",
         "@repo/typescript-config": "workspace:*",
-        "@types/node": "^20.4.10",
+        "@types/node": "^22.5.4",
         "drizzle-kit": "^0.19.12",
-        "eslint": "^8.47.0",
+        "eslint": "^9.10.0",
         "ts-node": "^10.9.1",
-        "tsup": "^7.2.0",
-        "typescript": "5.1.6"
+        "tsup": "^8.2.4",
+        "typescript": "5.6.2"
     }
 }
