@@ -1,4 +1,4 @@
-import { Button } from '@repo/ui/components/ui/button';
+import { Button } from '@repo/ui/components/ui/button'
 
 export default function Home() {
   return (
@@ -7,5 +7,5 @@ export default function Home() {
 
       <Button>Click me</Button>
     </div>
-  );
+  )
 }

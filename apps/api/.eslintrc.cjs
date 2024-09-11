@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['@repo/eslint-config/fastify'],
+  extends: ['@repo/eslint-config/fastify.cjs'],
 }
